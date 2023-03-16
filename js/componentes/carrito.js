@@ -79,6 +79,7 @@ function carro(db, printProducts){
                 itemFinded.qty -= qty
             }else{
                 cart = cart.filter(i => i.id !== id)
+                window.alert('No disponible');
             }
 
             printCart()

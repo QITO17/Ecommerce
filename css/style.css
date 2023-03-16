@@ -65,7 +65,7 @@ html{
     font-size: 16px;
     line-height:1.5;
     scroll-behavior: smooth;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
 *, 
@@ -588,9 +588,9 @@ button{
         align-items: center;
     }
 
-    .nav__menu,
+    
     .btn--close,
-    .btn--menu{
+    .btn-menu{
         display: none;
     }
 
@@ -605,14 +605,38 @@ button{
     .cart{
         top: var(--header-height);
     }
+
+    
+    .nav__list li{
+
+        box-sizing: border-box;
+        animation: border-bottom .7s ease-in-out;
+    }
+
+    .nav__list a:hover{
+        /* margin: 0 2px; */
+        border-bottom: solid 4px #999;
+        /* padding: 4px; */
+    }
+
+    .btn--cart{
+        right: 1.5rem;
+    }
+
+
 }
 
 @media(min-width:1024px){
     .section--title,
     .container{
         margin: 0 auto;
-    }    
+    }
+
+    
+
 } 
+
+
 
 
 

@@ -31,13 +31,39 @@
                 <a href="/" class="nav__logo">
                     <img src="./Logotipo.svg" alt="" class="logo--icon">
                 </a>
-        
+                <button id="noche" onclick="noche()">☀️🌗</button>
+                <script>
+                    let aux = false;
+                    function noche(){
+                        if(aux === false){
+                                let heade = document.querySelector('header');
+                                let maina = document.querySelector('footer');
+                                let body = document.querySelector('body');
+                                heade.style.background = '#E2E5E0';
+                                maina.style.background = '#E2E5E0';
+                                body.style.background = '#E2E5E0';
+                                aux=true;
+                    }else{
+                                let heade = document.querySelector('header');
+                                let maina = document.querySelector('footer');
+                                let body = document.querySelector('body');
+                                heade.style.background = '#fff';
+                                maina.style.background= '#fff';
+                                body.style.background = '#fff';
+                                aux=false;
+                    }
+                        }
+                        
+                    
+
+                </script>
             <div class="nav__menu">
                 <button type="button" class="nav__btn btn--close">
                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg=="/> 
                 </button> 
             
-                <ul class="nac__list">
+                    
+                <ul class="nav__list">
                     <li class="nav__items">
                         <a href="#" class="nav__link">
                             Productos
