@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:wght@100;300;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Genos:wght@100;300;700&display=swap" rel="stylesheet">
+    <box-icon type='solid' name='cat'></box-icon>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/main.js" type="module" defer></script>
+</head>
+<body>    
+    <!--Aqui pongo el loader que saque de esta pagina https://cssloaders.github.io/-->
+    <div class="loader">
+        <div class="loader__container">
+            <span></span>
+        </div>
+    </div>
+
+    <!--Header -->
+
+    <header class="header">
+        
+       <nav class="nav container">
+                <a href="/" class="nav__logo">
+                    <img src="./Logotipo.svg" alt="" class="logo--icon">
+                </a>
+        
+            <div class="nav__menu">
+                <button type="button" class="nav__btn btn--close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg=="/> 
+                </button> 
+            
+                <ul class="nac__list">
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">
+                            Productos
+                        </a>
+                    </li>
+        
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">
+                            Categorias
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">
+                            Secciones
+                        </a>
+                    </li>
+
+                    <li class="nav__items">
+                        <a href="#" class="nav__link">
+                            Ventas
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+            <div class="nav__buttons">
+
+                <button type="button" class="nav__bnt btn--cart">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAASpJREFUSEvFlW1RAzEQhp8qQEJxAFVQUAA4QEJRACgACTgAB4ADcEAd1EGZt7PLZHJ3ySZzHfbPTZP0ffYrmwVHtsWR9YkAHoAr4Bz4At6Ax6hjNcAHsB4R0/plBFICbIAnYAvcAhK9AF6AJXAHPNcgJYDScWaeStxNkHdL16oFMJWOmobvj6YtjWAfVSqcG2TkXwHqkjT3XQGWIqi1cAgYAfQU/6/gEUBv8Q/aLQA/uwNOsvzoMp7amjvUDPCiazbdZwDNJq1fA6+21wzQkLuxP0tM40Om0aHfsrRezQAJSGhqkuaRdQHcS4l9mteaTUqZvqkNAD82Jf2QF3W2LlKB5JkmaNphswGmbmYeWeQGf9sLGHoy88hqAN0JPVbquhCgJljcn2WglQi/csA9GVrhoskAAAAASUVORK5CYII="/> 
+                    <span class="notify">
+                        0
+                    </span>
+                </button>
+                
+                <button type="button" class="nav__bnt btn-menu">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAExJREFUSEtjZKAxYKSx+QyjFhAM4QEJov8EnYVfAYqjsfmA5hZQ6AFU7QMSBzT3Ac3jgOYW0DyIhr4FNI8Dmlsw9ONg1AcoIUDz0hQAbegGGXzv/l0AAAAASUVORK5CYII="/>            
+                </button>
+            </div>
+        
+        
+        
+        
+        </nav> 
+    </header>
+
+    <main class="main">
+        <section class="products section">
+            <h2 class="products__title section--title">Productos</h2>
+                <div class="products__container container">
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
+                        </div>
+                        <div class="product__content">
+                            <button type="button" class="product__btn add-to-cart" data-id="1">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvNlNsVwUAQhr9UQAlUgA6ogA7wygM6oAJeeEUF6IAKUAEqQAWccZKcuCQ7SaxjXufy7b//zjpYDsfyfH4KuLlqLsAM6H1DXVCBB/DmVoB1WsinK+oCQ2AF1GwAssDZHZwHjmkgYSaLB/UUg3dASfrDAEVgmwJwAnJRAMnJKQoJIQOgbwI0gGlCgO+dadFkJzIxIRug7PWYACOgExPQdBf10WYCiFGHGICra64oVwGkaAlUlZA5IN75YVIghbLNCyXg7XvRALRPdg/I/jyFFqAU8F6mBYyBFjAB2i9jonLGV+TNCn7lr4eKyqkB1hVY9+B/AXdYBygZk/eVswAAAABJRU5ErkJggg=="/>
+                            </button>
+                            <span class="product__price">$5</span>
+                            <span class="product__stock">Disponible: 3</span>
+                            <h3 class="product__title">Camiseta blanca desarrollo Academlo</h3>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
+                        </div>
+                        <div class="product__content">
+                            <button type="button" class="product__btn add-to-cart" data-id="1">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvNlNsVwUAQhr9UQAlUgA6ogA7wygM6oAJeeEUF6IAKUAEqQAWccZKcuCQ7SaxjXufy7b//zjpYDsfyfH4KuLlqLsAM6H1DXVCBB/DmVoB1WsinK+oCQ2AF1GwAssDZHZwHjmkgYSaLB/UUg3dASfrDAEVgmwJwAnJRAMnJKQoJIQOgbwI0gGlCgO+dadFkJzIxIRug7PWYACOgExPQdBf10WYCiFGHGICra64oVwGkaAlUlZA5IN75YVIghbLNCyXg7XvRALRPdg/I/jyFFqAU8F6mBYyBFjAB2i9jonLGV+TNCn7lr4eKyqkB1hVY9+B/AXdYBygZk/eVswAAAABJRU5ErkJggg=="/>
+                            </button>
+                            <span class="product__price">$5</span>
+                            <span class="product__stock">Disponible: 3</span>
+                            <h3 class="product__title">Camiseta blanca desarrollo Academlo</h3>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
+                        </div>
+                        <div class="product__content">
+                            <button type="button" class="product__btn add-to-cart" data-id="1">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvNlNsVwUAQhr9UQAlUgA6ogA7wygM6oAJeeEUF6IAKUAEqQAWccZKcuCQ7SaxjXufy7b//zjpYDsfyfH4KuLlqLsAM6H1DXVCBB/DmVoB1WsinK+oCQ2AF1GwAssDZHZwHjmkgYSaLB/UUg3dASfrDAEVgmwJwAnJRAMnJKQoJIQOgbwI0gGlCgO+dadFkJzIxIRug7PWYACOgExPQdBf10WYCiFGHGICra64oVwGkaAlUlZA5IN75YVIghbLNCyXg7XvRALRPdg/I/jyFFqAU8F6mBYyBFjAB2i9jonLGV+TNCn7lr4eKyqkB1hVY9+B/AXdYBygZk/eVswAAAABJRU5ErkJggg=="/>
+                            </button>
+                            <span class="product__price">$5</span>
+                            <span class="product__stock">Disponible: 3</span>
+                            <h3 class="product__title">Camiseta blanca desarrollo Academlo</h3>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product__image">
+                            <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Producto 1">
+                        </div>
+                        <div class="product__content">
+                            <button type="button" class="product__btn add-to-cart" data-id="1">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvNlNsVwUAQhr9UQAlUgA6ogA7wygM6oAJeeEUF6IAKUAEqQAWccZKcuCQ7SaxjXufy7b//zjpYDsfyfH4KuLlqLsAM6H1DXVCBB/DmVoB1WsinK+oCQ2AF1GwAssDZHZwHjmkgYSaLB/UUg3dASfrDAEVgmwJwAnJRAMnJKQoJIQOgbwI0gGlCgO+dadFkJzIxIRug7PWYACOgExPQdBf10WYCiFGHGICra64oVwGkaAlUlZA5IN75YVIghbLNCyXg7XvRALRPdg/I/jyFFqAU8F6mBYyBFjAB2i9jonLGV+TNCn7lr4eKyqkB1hVY9+B/AXdYBygZk/eVswAAAABJRU5ErkJggg=="/>
+                            </button>
+                            <span class="product__price">$5</span>
+                            <span class="product__stock">Disponible: 3</span>
+                            <h3 class="product__title">Camiseta blanca desarrollo Academlo</h3>
+                        </div>
+                    </article>
+                </div>
+        </section>        
+    </main>
+
+
+
+    <div class="cart">
+        <div class="cart__container">
+            <div class="cart__header">
+                <h3 class="cart__title">Carrito de Compras</h3>
+                <button type="button" class="cart__btn btn--close">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPlJREFUSEvVlf8RATEQhb+rgA6UgA7oQAdGB1RACyqgBB3QATqgAypw82YuJrMuSO6Hkf8ud/u+7Nu9bEbDK2tYn9YBE2AJDBIzuwALYOfibQb6oJco7sJOwDAEeFQUf9G1GfwMcAc6JruyvaQMZoB8PXgQiY+KZtiU2Pp05pNFN2BcANRZgmhJXFDt7YGugXwNUJyFaO+duN5HASxEz6GTJ9VAQc5zndwB/JrYMkRl4Iu7P9xZFIJEAfRX+p7rtH7hj1W6SLFbYG26xRV+DkyrAlJujyiL/gtQx3V99ueJvSo0cFZAP8UX4Aqo8MGBk6gbDmt9JteeQQ5DIzkZa1FwRAAAAABJRU5ErkJggg=="/> 
+                </button>
+            </div>
+
+            <div class="cart__body">
+                <!-- <div class="cart__empty">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAR5JREFUSEvN1cExBUEUheHvRYAMiAARIAIywJYFIkAEbNgiAmRABIgAESAC6qqeV2PevOmuGqOczSz6zv379JnbMzKwRgP396eAz+TmHZc4+A13dQcVoOq7hru+kLYj2scJbrExBGAWb6nxAl76QKaFHBls9mj8iOV4fxpgCQ89AK+Y7wLEWuxiEdvpqyrhVc6PcZQDbOEigb7tZhTZPSOe4+xygxYzMZPOMxx1qdrQPVarwhzgFHu4QjToUszMSvNIc4AIKmyH5hCO2lTVfaRwx3U5QDS7wXq6OsJRmyLQwzanJYCY5utcwml94nopAdQ/2S7OE2J+fqgUUGhgsqwUcIYdnGO30aZrrfiHU7/Km5vqWisGDO5g8Az+L+ALYZk0GaU3ojwAAAAASUVORK5CYII="/>
+                    <p>No Hay Productos</p>
+                </div>  -->
+
+                <article class="article">
+                    <div class="article__image">
+                        <img src="https://res.cloudinary.com/duu1imwxs/image/upload/v1677270464/eCommerce/shirt1_prckre.png" alt="Products 1">
+                    </div>
+                    <div class="article__content">
+                        <h3 class="article__title">Camiseta blanca desarrollo Academlo fullstack</h3>
+                        <span class="article__price">$10</span>
+                        <div class="article__quantity">
+                            <button type="button" class="article__quantity-btn article--minus">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAENJREFUSEtjZKAxYKSx+QyjFhAM4dEgGg0igiFAUAGuVPSfoE7sCjDMGzALyPQAprbRjEYwKEeDaDSICIYAQQU0T0UAw9sCGchp4KEAAAAASUVORK5CYII="/>
+                            </button>
+                            <span class="article__quantity-text">1</span>
+                            <button type="button" class="article__quantity-btn article--plus">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAFZJREFUSEtjZKAxYKSx+QyjFhAMYVKD6D/URKL1Ea0QavCoBQTjbOgEEcylBL2EpgAj0eBKRTS3AJfLh04cjPoAHgKDriwiNV+M1miEQ4zUSCZsIpoKAFy0DhnDOA3uAAAAAElFTkSuQmCC"/>                              
+                            </button>                   
+                        </div>
+                        <button type="button" class="article__btn remove-from-cart">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ9JREFUSEvt1csRwjAMRdGTSigB6IQSSAeUQCdQAp0AHZBKYFjwCzFyMgmbREuP5l3p2ZYKA0cxsL4cwBq7RCEl9r+KjAALHIMulzilcuqAa0+WPXX/DuipgZdM6g66WvWlNw7Ao8u6bU3nnSyaAI1P/93vyaIRWNRmAGZ/tAtmbZRxxn1BfURq2K2wxTwTUmGDQy4gUzdOi3ZyrBBk3AB+wyoZJl1mqQAAAABJRU5ErkJggg=="/>
+                        </button>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__footer">
+                <div class="cart__count">
+                    <span class="cart__count--text">Articulos </span>
+                    <span class="cart__count--item">0</span>
+                </div>
+
+                <div class="cart_total">
+                    <span class="cart__total--text">total</span>
+                    <span class="cart__total--item">$0</span>
+                </div>
+                <button type="button" class="cart__btn btn--buy ">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer class="footer section">
+        <div class="footer__container conteiner">
+            <div class="footer__top">
+                <div class="footer__left">
+                    <h3 class="footer__title">
+                        Sobre Nosotros
+                    </h3>
+                    <p class="footer__text">
+                        Jostin Arley Hurtado Hinestroza
+                        Soy alguien amigable pasivo
+                        y que le gusta ayudar a los demas
+                    </p>
+                </div>
+                <div class="footer__right">
+                    <h3 class="footer__title">Redes Sociales</h3>
+                    <ul class="footer__social">
+                        <li class="footer__item">
+                            <a href="https://github.com/QITO17" class="footer__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAZdJREFUSEu1lYExBVEMRe+vABWgAlSAClABKkAFqAAdUMGnAlSADuiACpgzk+zkZ7L735rZzOzs7puXe5P7kryZJrbZxPhqITiUdCBp2x5ierfnRdLDUJBDBADfSNpYkuWnpAtJj9W+PoIrSZcj5bs1ogW3iuA/4A56J+k8MmSCPUnPtuFJEmQnks5s7cPeW/ZG/3vbc2xrR1GuTICe67bx2gj4XZX0nSSLazFrMDZ9byTgUOcBhOiIvsWyrKeW2UKZkqqnCei+JMqwxSjhtyq4mAFgu0FrnMZY9KdPdnCOBGi8YoivkjjwMRYJOuxI8BvQJiGIEZDN2pjwrcpcgS+fADGDfMi0P93ZYjQXY8Wtq8C+Mv2x86D86M7cAw5EL1B5OZCyTHGiSUiTEiUqL1u6mp5wIoDJmKrjO1onT64i/n1UAESZOUjsagfLkvr6Qv9Uw871LKdjCLUaikuHnfs7CQ1DNj7UohSZoMpy8EZDLmRg+FXOToDmnE85VlquTIjIgmyiMUq47cqbzDe2ELT0Qe+eyQn+AIklVhnz1DvpAAAAAElFTkSuQmCC"/>
+                            </a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="https://www.facebook.com/arley.hurtado.5667/" class="footer__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAL1JREFUSEvtlIEJwjAQRV836AY6ghtUJ9EROoJOoCO4ghvoBDqCbuAGlQ8JHGo9UhJUaKBw0Ob/+4+7VhQ+VWF9fs5gCmyBGaBa5wTM+0ikJJDgGaifxLIZ7IHlm06zGRyBJhgcgBVw94YkBVFnxDbA2hPX+68bCMMkdGo7Fi49cYpi/RLKS2C59xH5iCuHwcKkSU6wC0uli3GCVN+Aa1BrgUuORfvPKbLJxwTu4o+IXESDPvB+FYNE7aXiBg+0MykZNmDKCAAAAABJRU5ErkJggg=="/>                            
+                            </a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="https://www.linkedin.com/in/free-fire-qito-57ab49255/" class="footer__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAOdJREFUSEvllWENwjAQhb8pAAk4AAeAA1AAEnCCBXAACgAHSEACKIC85Eqabg0s1y0h3K82ub5vd++6VnQcVcf69A44A1NnVdKYB420gqdTvKabAzyAg2UvgEFL8Fs3B9gDaxPdAaufA9yTFg1LVyAPriY6MQ8uth8BAsqjGyCPxskHfPRAYjM7FEY3HJI3EleVITbANtq7ALluCRimzQVQe06AWreMvIovqQug1gmgOJoHWncCaPJKsGIV/DFAIxdfNE2OTFRorQlSNOV95UHLP0MtPWtyiQcnNr7/J9Pbmnyviiub4As/E0wZX0UvUwAAAABJRU5ErkJggg=="/>  
+                           </a>
+                        </li>
+
+                        <li class="footer__item">
+                            <a href="https://.apiwhatsapp.com/send?phone=+573217299457" class="footer__link">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAbRJREFUSEvNleExBEEQRt9lQATIQAbIgAgQASJABIiADMiAiwARkAEioN5V99aYnZ37dVXXVVNXtzvTX/fr7tkZK7bZiv2zFgL7wDGwG+sbeANegHn8ToLoZbAN3AMK/BRON0JoL7w+AaeAwiObEjDaZ1ggvAWuJkI8B27C+VErm5aAEX5E1IcRea8XDOYB2AJ26kxaAqYsFpesFXR9dlQUeQU8ayaD1QK58TqwWAcPytfoepa4FFBoYbWAvM+AzXCah9xrIUXRs1/gDvBcU8DW08SjlQL/IptQqc+PMpCzm07CgYgsuIjMaplJwJkZ9taIFLCwdk9aZiEeMfXMdr4s0dcCoxTDm86NzN8LIIfQYso8h8z/NorvmzXIItsxdVvmO5250kl2nA59rkgiHtUgmZeHSiQWXwx5TXiF5Lzo1KvloJzo1qBNYSqFDMRlvTIb5+W96MAmIh+OenlJYWVu5GLNbIYjdQZ2z2MU8isOWIuykHnY68OhtMv0M3LuxqlJbgUtOsVEYtQ5jH4T5N+8q2oBmeaw6dD/sjbKbD8j97nLjsmaNUmuxSdz2fXQfb/yDP4AZJloGU7UfncAAAAASUVORK5CYII="/> 
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__botom">
+                <p class="footer__text">Todos los derechos reservados<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAYpJREFUSEu1lYEtBUEQhr/XgQ5QASpABagAFaACVIAKUAEqQAXogA50QL5kRvY2d/vuEjfJJS/7Zuef+Wfm3wUz22Lm+IwB2Af2gM34zOk9vkfgqZVkC2AHuAXWllT5CRwDL31+QwAXwHlc+AKuI4CZa1ZjAqfAapz5+6YG6QPQ8SoczyJ4q4imfw1gVs8R7QCQ4zFmnx7CcbekqwaQT0uuMzfASdCSTRZcSr4LiqzcGOuZVQmQWch52dg74HCgjLrKTPDvvATIQGX2ZemXgD4G8VyrKcx+3ANHOpQATsgGsBUz7v+O3jZgcCdrmTldb3HfOB2An7hdguaZnJr5GOvE6Qs2G8B/UvSRsjKlyfbA5mWTV6LpJW3NJufEdOY4mpuyUfdg0ph6eWjR3HArcKI0KXBEy8nK7Dt79F9S4cyrvFpTKnQoxatXISueJold3i0vSZty/VosoAslXfqlrPQq77IHR2lIvR9aMjmXokkPThnM6fIza6Ukm+ze2OimpI95k8fIw6DP7AC/pT5pGeDIVzcAAAAASUVORK5CYII="/></p>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
